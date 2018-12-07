@@ -144,9 +144,9 @@ bool pushDownA(vector<char> vc){
 
 int main()
 {
-  int pil;
-  do{
-      pil = 0;
+  int pil = 1;
+//  while( pil == 1){
+      //pil = 0;
       system("cls");
       cout << "kamus kata 'Subjek'" << endl;
       cout << "saya - kita - kamu - malih - aridi" << endl;
@@ -160,7 +160,7 @@ int main()
       cout << "kamus kata 'Keterangan'" << endl;
       cout << "bekas - baru - sekarang - besok - kemarin" << endl;
       cout << " " << endl;
-      string sentence;
+      string sentence = "";
       cout << "Masukan kalimat dibawah ini!!" << endl;
       getline(cin,sentence);
       vector<string> tokenized = tokenizer(sentence);
@@ -175,8 +175,8 @@ int main()
       cout << "struktur kalimat : ";
       showAllChar(spoked);
       cout<<endl;
-      cout << "tekan '1' untuk memasukan kalimat lagi! " << '\n';
-      cin >> pil;
-  }while(pil == 1);
+      // cout << "tekan '1' untuk memasukan kalimat lagi! " << '\n';
+      // cin >> pil;
+  //}
   return 0;
 }
