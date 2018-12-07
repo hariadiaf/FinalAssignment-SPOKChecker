@@ -47,7 +47,7 @@ char tokenRecognizer(string word){
   }else if(Check(word,'k')){
     return 'K';
   }else{
-    return 'e';
+    return 'E';
   }
 }
 
